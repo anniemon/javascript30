@@ -18,7 +18,8 @@
 
   <style>
     html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+      background: url(./evie-s-w1JE5duY62M-unsplash.jpg) center;
+      background-repeat: no-repeat;
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -66,6 +67,7 @@
       transform: rotate(90deg);
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0, 3.38, 0.45, 0.07);
+      border-radius: 0.8rem;
     }
 
     .hour-hand {
@@ -76,6 +78,10 @@
     .min-hand {
       width: 40%;
       left: 10%;
+    }
+
+    .second-hand {
+      background-color: rgb(255, 119, 119);
     }
 
     .notransition {
