@@ -68,6 +68,15 @@
       transition-timing-function: cubic-bezier(0, 3.38, 0.45, 0.07);
     }
 
+    .hour-hand {
+      /* width: 20%;
+      transform: translateX(-50%); */
+    }
+
+    .min-hand {
+      /* width: 30% */
+    }
+
     .notransition {
       transition: none;
     }
@@ -96,8 +105,10 @@
 
     // 한 바퀴 돌았을 때 transition 일시적으로 없애기
     hands.forEach(hand => {
-      if(hand.style.transform === `rotate(444deg)`){
+      if(hand.style.transform === `rotate(90deg)`){
          hand.classList.add('notransition');
+       } else {
+         hand.classList.remove('notransition');
        }
     })
   }
